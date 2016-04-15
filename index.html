@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoring Tool</title>
+    <link rel="stylesheet" href="css/design.css">
+    <script src="src/logic.js"></script>
+</head>
+<body onload="initialise();">
+<hr class="horizontal-divider">
+<div id="main_content" class="content">
+    <div class="title-tab">
+        <h3>Score Recommendation</h3>
+
+        <p>Based on the inputs given by you, we recommend the following score splits that you should
+            aim for to achieve the desired target score.</p>
+    </div>
+    <div class="quant-score">
+        <div class="calculated-scores">
+            <label for="quant_score">Quant Score</label>
+            <input id="quant_score" type="text" value="40" disabled>
+        </div>
+        <div class="range-selector">
+            <label for="algebra_selector">Algebra</label>
+            <input id="algebra_selector" type="range" value="20" min="10" max="90" onchange="showVal();">
+            <input id="algebra_score" type="text" value="20" disabled>
+            <label for="arithmetic_selector">Arithmetic</label>
+            <input id="arithmetic_selector" type="range" value="20" min="10" max="90" onchange="showVal();">
+            <input id="arithmetic_score" type="text" value="20" disabled>
+        </div>
+    </div>
+    <div class="score-divider">
+        <div class="plus"><img src="images/plus-sign-grey-sm.jpg"></div>
+        <hr class="vertical-divider">
+    </div>
+    <div class="verbal-score">
+        <div class="calculated-scores">
+            <label for="verbal_score">Verbal Score</label>
+            <input id="verbal_score" type="text" value="60" disabled>
+        </div>
+        <div class="range-selector">
+            <label for="sc_selector">SC</label>
+            <input id="sc_selector" type="range" value="20" min="10" max="90" onchange="showVal();">
+            <input id="sc_score" type="text" value="20" disabled>
+            <label for="cr_selector">CR</label>
+            <input id="cr_selector" type="range" value="20" min="10" max="90" onchange="showVal();">
+            <input id="cr_score" type="text" value="20" disabled>
+            <label for="rc_selector">RC</label>
+            <input id="rc_selector" type="range" value="20" min="10" max="90" onchange="showVal();">
+            <input id="rc_score" type="text" value="20" disabled>
+        </div>
+    </div>
+    <div class="equals"><img src="images/equal.png"></div>
+    <div class="total-score">
+        <div class="calculated-scores">
+            <label for="total_score">Score</label>
+            <input id="total_score" type="text" value="100" disabled>
+        </div>
+    </div>
+</div>
+<script type="text/javascript"></script>
+</body>
+</html>
